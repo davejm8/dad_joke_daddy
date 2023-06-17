@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dad-jokes.p.rapidapi.com/random/joke
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Rapidapi-Key:
+      - X-RapidAPI-Key
+      X-Rapidapi-Host:
+      - dad-jokes.p.rapidapi.com
+      User-Agent:
+      - Faraday v2.7.6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 17 Jun 2023 17:57:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '307'
+      Connection:
+      - keep-alive
+      Etag:
+      - W/"133-Milap9e4FIDXH8+yAEps1KealaU"
+      Expect-Ct:
+      - max-age=0
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      - max-age=31536000
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Random-Jokes-Limit:
+      - '50'
+      X-Ratelimit-Random-Jokes-Remaining:
+      - '48'
+      X-Ratelimit-Random-Jokes-Reset:
+      - '84270'
+      Server:
+      - RapidAPI-1.2.8
+      X-Rapidapi-Version:
+      - 1.2.8
+      X-Rapidapi-Region:
+      - AWS - us-east-1
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"body":[{"_id":"60dd376a1338eeba5de1da94","setup":"A
+        bowl of salad went to church","punchline":"Lettuce pray","type":"salad","likes":[],"author":{"name":"unknown","id":null},"approved":true,"date":1618108661,"NSFW":false,"shareableLink":"https://dadjokes.io/joke/60dd376a1338eeba5de1da94"}]}'
+  recorded_at: Sat, 17 Jun 2023 17:57:04 GMT
+recorded_with: VCR 6.1.0
