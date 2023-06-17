@@ -1,0 +1,147 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://icanhazdadjoke.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 17 Jun 2023 20:08:22 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Headers:
+      - User-Agent, Content-Type
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Request-Method:
+      - GET
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store, public, s-maxage=0
+      Retry-After:
+      - '60'
+      X-Frame-Options:
+      - DENY
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      X-Ratelimit-Reset:
+      - '1687032563'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Tzi6nwrNs94YDYQtvfnEzt35%2FFLDhEOZ8xmRpOv1AQW68z2rMXtby6%2F5oYY2OS01d%2FYZi3wzMvY67EFBZ2Jy%2FrB6QvrGS1l6WrejqanbEibxRAQ4HlhJ5QV%2F2OMNCreDhQ10EL1ITJfjSZ1EEBWwSPo%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7d8dec927e814401-EWR
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"ei3T08EQZob","joke":"Hostess: Do you have a preference of where
+        you sit?\r\nDad: Down.","status":200}
+
+'
+  recorded_at: Sat, 17 Jun 2023 20:08:24 GMT
+- request:
+    method: post
+    uri: https://api.twilio.com/2010-04-01/Accounts/AC5f874e32c2b5842ff1a38878ddd7096d/Messages.json
+    body:
+      encoding: UTF-8
+      string: Body=Hostess%3A+Do+you+have+a+preference+of+where+you+sit%3F%0D%0ADad%3A+Down.&From=%2B18448459414&To=12078310173
+    headers:
+      User-Agent:
+      - twilio-ruby/6.1.0 (darwin21 x86_64) Ruby/2.7.4
+      Accept-Charset:
+      - utf-8
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - application/json
+      Authorization:
+      - Basic QUM1Zjg3NGUzMmMyYjU4NDJmZjFhMzg4NzhkZGQ3MDk2ZDpkMTNhOGQzMTUzODJmMWYzYTUyZWUyMTU4Yjk1YmY2MQ==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sat, 17 Jun 2023 20:08:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '829'
+      Connection:
+      - keep-alive
+      Twilio-Request-Id:
+      - RQa7b78ab02fc9fd304253030bfdfef1e5
+      Twilio-Request-Duration:
+      - '0.137'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match,
+        If-Unmodified-Since, Idempotency-Key
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Powered-By:
+      - AT-5000
+      Strict-Transport-Security:
+      - max-age=31536000
+      Twilio-Concurrent-Requests:
+      - '1'
+      X-Shenanigans:
+      - none
+      X-Home-Region:
+      - us1
+      X-Api-Domain:
+      - api.twilio.com
+    body:
+      encoding: UTF-8
+      string: '{"body": "Hostess: Do you have a preference of where you sit?\r\nDad:
+        Down.", "num_segments": "1", "direction": "outbound-api", "from": "+18448459414",
+        "date_updated": "Sat, 17 Jun 2023 20:08:23 +0000", "price": null, "error_message":
+        null, "uri": "/2010-04-01/Accounts/AC5f874e32c2b5842ff1a38878ddd7096d/Messages/SMa7b78ab02fc9fd304253030bfdfef1e5.json",
+        "account_sid": "AC5f874e32c2b5842ff1a38878ddd7096d", "num_media": "0", "to":
+        "+12078310173", "date_created": "Sat, 17 Jun 2023 20:08:23 +0000", "status":
+        "queued", "sid": "SMa7b78ab02fc9fd304253030bfdfef1e5", "date_sent": null,
+        "messaging_service_sid": null, "error_code": null, "price_unit": "USD", "api_version":
+        "2010-04-01", "subresource_uris": {"media": "/2010-04-01/Accounts/AC5f874e32c2b5842ff1a38878ddd7096d/Messages/SMa7b78ab02fc9fd304253030bfdfef1e5/Media.json"}}'
+  recorded_at: Sat, 17 Jun 2023 20:08:25 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://icanhazdadjoke.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 17 Jun 2023 20:07:07 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Headers:
+      - User-Agent, Content-Type
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Request-Method:
+      - GET
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store, public, s-maxage=0
+      Retry-After:
+      - '60'
+      X-Frame-Options:
+      - DENY
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      X-Ratelimit-Reset:
+      - '1687032488'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TITG1vGHyY2BTgdqQqFuCxuhhitbXQyHX1z%2Fj4rt2vuHW1XZDvLGCbEz5y4IOdZaABAu5aEPrkLfCOAsjnrK0O8hFZyvh0VWsYffmp0zCrQocu2nOIjOwjemC5hxTp9Jc9bpCmGdKsXZbsJo5FR2gYs%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7d8deac22efd41b5-EWR
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"6USSCQnyd","joke":"I''d like to start a diet, but I''ve got
+        too much on my plate right now.","status":200}
+
+'
+  recorded_at: Sat, 17 Jun 2023 20:07:09 GMT
+recorded_with: VCR 6.1.0
