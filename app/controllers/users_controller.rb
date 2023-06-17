@@ -9,6 +9,10 @@ class UsersController < ApplicationController
     send_sms_message(phone_number, joke)
 
     redirect_to root_path, notice: "Text-illent job! Your dad joke has been sent!"
+
+  rescue Twilio::REST::RestError => e
+    flash[:error] = "That phone number format sure did a 'number' on us! Please try again."
+    redirect_to root_path # replace this with your error path
   end
 
   private

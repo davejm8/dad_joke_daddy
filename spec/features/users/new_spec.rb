@@ -18,4 +18,15 @@ RSpec.describe 'root', type: :feature do
       expect(page).to have_content('Text-illent job! Your dad joke has been sent!')
     end
   end
+
+  describe 'sad path', :vcr do
+    it 'returns error message when phone number invalid' do
+      visit root_path
+
+      fill_in 'Phone number', with: 'asdgadfhsfh'
+      click_button 'Prepare for Pun-ishment!'
+
+      expect(page).to have_content("That phone number format sure did a 'number' on us! Please try again")
+    end
+  end
 end

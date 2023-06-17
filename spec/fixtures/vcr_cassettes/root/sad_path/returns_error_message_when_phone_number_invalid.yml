@@ -1,0 +1,141 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://icanhazdadjoke.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 17 Jun 2023 21:02:56 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Headers:
+      - User-Agent, Content-Type
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Request-Method:
+      - GET
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store, public, s-maxage=0
+      Retry-After:
+      - '60'
+      X-Frame-Options:
+      - DENY
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      X-Ratelimit-Reset:
+      - '1687035837'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=00WvWWL17Xe3c9rqbRuvf7AT%2FKCeYH6EhNUmS1xtLPhx7B3wS5neIxbTRq2YuEu5Mhrd0wa9gmDJ0UwbvNOnYfTiW9BjOJI%2BXymISJ52iptC6SKWF4Jb2Yjw%2F1ClbAo%2BvAwLaUh3hZ3AS8orOsJAorA%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7d8e3c833bee8c2f-EWR
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"99UDQZgyIBd","joke":"Two satellites decided to get married.
+        The wedding wasn''t much, but the reception was incredible.","status":200}
+
+'
+  recorded_at: Sat, 17 Jun 2023 21:02:58 GMT
+- request:
+    method: post
+    uri: https://api.twilio.com/2010-04-01/Accounts/AC5f874e32c2b5842ff1a38878ddd7096d/Messages.json
+    body:
+      encoding: UTF-8
+      string: Body=Two+satellites+decided+to+get+married.+The+wedding+wasn%27t+much%2C+but+the+reception+was+incredible.&From=%2B18448459414&To=asdgadfhsfh
+    headers:
+      User-Agent:
+      - twilio-ruby/6.1.0 (darwin21 x86_64) Ruby/2.7.4
+      Accept-Charset:
+      - utf-8
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - application/json
+      Authorization:
+      - Basic QUM1Zjg3NGUzMmMyYjU4NDJmZjFhMzg4NzhkZGQ3MDk2ZDpkMTNhOGQzMTUzODJmMWYzYTUyZWUyMTU4Yjk1YmY2MQ==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Sat, 17 Jun 2023 21:02:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '147'
+      Connection:
+      - keep-alive
+      Twilio-Request-Id:
+      - RQf95a2f8b647827a43753608c495be34a
+      Twilio-Request-Duration:
+      - '0.060'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match,
+        If-Unmodified-Since, Idempotency-Key
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Powered-By:
+      - AT-5000
+      Strict-Transport-Security:
+      - max-age=31536000
+      Twilio-Concurrent-Requests:
+      - '1'
+      X-Shenanigans:
+      - none
+      X-Home-Region:
+      - us1
+      X-Api-Domain:
+      - api.twilio.com
+    body:
+      encoding: UTF-8
+      string: '{"code": 21211, "message": "The ''To'' number  is not a valid phone
+        number.", "more_info": "https://www.twilio.com/docs/errors/21211", "status":
+        400}'
+  recorded_at: Sat, 17 Jun 2023 21:02:59 GMT
+recorded_with: VCR 6.1.0
