@@ -1,0 +1,5 @@
+<%= form_with url: "/send_sms", method: :post, local: true do |f|%>
+  <%= f.label :phone_number %>
+  <%= f.text_field :phone_number, required: true %>
+  <%= f.submit 'Prepare for Pun-ishment!' %>
+<% end %>
