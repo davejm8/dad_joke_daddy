@@ -6,7 +6,7 @@ RSpec.describe RapidService, type: :service do
       it "returns a dad joke" do
         joke = RapidService.new.get_dad_joke
 
-        expect(joke).to be_a(Hash)
+        expect(joke).to be_a(String)
       end
     end
   end
